@@ -1,8 +1,13 @@
 Koolshare Asuswrt-Merlin shadowsocks Changelog
 ===========================================
+4.0.3
+   - update	迁移至新仓库：https://github.com/hq450/fancyss；
+
+4.0.2
+   - fix	修复v2ray使用域名时因无法解析导致代理不通的问题；
+
 4.0.1
    - fix	修复在节点页面无法通过vmess://链接添加v2ray节点的bug；
-   - fix	修复代理服务器域名相关的其它二级域名均解析到代理服务器的bug；
    - add	【附加功能】添加插件定时重启功能（实验）；
    - add	【附加功能】添加插件触发重启功能（实验），可以在设定的时间间隔下解析服务器IP地址，如果IP发生改变，则重启插件或dnsmasq；
 
