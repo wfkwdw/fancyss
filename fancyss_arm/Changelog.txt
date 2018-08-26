@@ -1,7 +1,11 @@
-Koolshare Asuswrt-Merlin shadowsocks Changelog
+Koolshare Asuswrt-Merlin shadowsocks for arm router Changelog
 ===========================================
 4.0.3
    - update	迁移至新仓库：https://github.com/hq450/fancyss；
+   			将对应的插件、规则、二进制更新链接更换为新仓库的链接
+
+===========================================
+以下为原ks开发组维护版本的更新日志:
 
 4.0.2
    - fix	修复v2ray使用域名时因无法解析导致代理不通的问题；
