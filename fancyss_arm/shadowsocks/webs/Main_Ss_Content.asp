@@ -137,24 +137,6 @@ function pop_111() {
 	});
 }
 
-function pop_changelog() {
-	require(['/res/layer/layer.js'], function(layer) {
-		layer.open({
-			type: 2,
-			shade: .7,
-			//scrollbar: 0,
-			title: '科学上网插件 - 更新日志',
-			area: ['950px', '600px'],
-			fixed: true, //不固定
-			maxmin: true,
-			shadeClose: 1,
-			id: 'LAY_layuipro1',
-			btnAlign: 'c',
-			content: 'https://koolshare.ngrok.wang/shadowsocks/Changelog.txt',
-		});
-	});
-}
-
 function pop_help() {
 	require(['/res/layer/layer.js'], function(layer) {
 		layer.open({
@@ -1922,9 +1904,9 @@ function updatelist(action) {
 
 function version_show() {
 	$.ajax({
-		url: 'https://koolshare.ngrok.wang/shadowsocks/config.json.js',
+		url: 'https://raw.githubusercontent.com/hq450/fancyss/master/fancyss_arm/config.json.js',
 		type: 'GET',
-		dataType: 'jsonp',
+		dataType: 'json',
 		success: function(res) {
 			if (typeof(res["version"]) != "undefined" && res["version"].length > 0) {
 				if (res["version"] == db_ss["ss_basic_version_local"]) {
